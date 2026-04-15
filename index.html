@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flora & Nature | Artisanal Blooms</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <nav id="navbar">
+        <div class="logo">Flora & Nature</div>
+        <ul class="nav-links" id="nav-menu">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#shop">Flowers</a></li>
+            <li><a href="#features">About</a></li>
+        </ul>
+        <div class="nav-right">
+            <div id="cart-status">🛒 Cart: <span id="cart-count">0</span></div>
+            <button class="menu-toggle" id="mobile-btn">☰</button>
+        </div>
+    </nav>
+
+    <header id="home" class="hero">
+        <div class="hero-content">
+            <h1 class="main-title">Flowers</h1>
+            <div class="hero-card">
+                <h3>Vibrant Gerbera Collection</h3>
+                <p>Bring sunshine indoors with our hand-picked Gerbera daisies. Freshly arranged in a signature glass vase.</p>
+                <div class="cta-group">
+                    <button class="price-btn add-btn" data-name="Vibrant Gerbera (Vase)" data-price="500">500 PHP | Add to Cart</button>
+                </div>
+            </div>
+        </div>
+        <div class="hero-image">
+            <img src="Flower.webp" alt="Vibrant Gerbera Daisies" class="main-img">
+        </div>
+    </header>
+
+    <section id="features" class="features-bar">
+        <div class="feat-item">🌸 <span>Fresh Blooms</span></div>
+        <div class="feat-item">🚚 <span>Same-Day Delivery</span></div>
+        <div class="feat-item">♻️ <span>Eco Packaging</span></div>
+    </section>
+
+    <section id="shop" class="product-section">
+        <h2 class="section-title">Choose Your Flowers</h2>
+        <div class="product-grid">
+            <div class="flower-card">
+                <img src="Gerbera.jpg" alt="Gerberas">
+                <div class="card-info">
+                    <h4>Vibrant Gerberas</h4>
+                    <p>450 PHP</p>
+                    <button class="add-btn" data-name="Vibrant Gerberas" data-price="450">Add to Cart</button>
+                </div>
+            </div>
+            <div class="flower-card">
+                <img src="Roses.webp" alt="Roses">
+                <div class="card-info">
+                    <h4>Blush Roses</h4>
+                    <p>500 PHP</p>
+                    <button class="add-btn" data-name="Blush Roses" data-price="500">Add to Cart</button>
+                </div>
+            </div>
+            <div class="flower-card">
+                <img src="white lily.jpg" alt="Lilies">
+                <div class="card-info">
+                    <h4>Peace Lilies</h4>
+                    <p>400 PHP</p>
+                    <button class="add-btn" data-name="Peace Lilies" data-price="400">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Flora & Nature. All rights reserved.</p>
+        <div class="social-icons">FB | IG | PT</div>
+    </footer>
+
+    <div id="cart-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2>Your Shopping Bag</h2>
+            <hr>
+            <div id="cart-items-list">
+                </div>
+            <div class="cart-summary">
+                <p>Total: <span id="total-price">0</span> PHP</p>
+                <button class="checkout-btn">Checkout</button>
+                <button class="clear-btn" onclick="clearCart()">Empty Cart</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
